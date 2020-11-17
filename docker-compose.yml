@@ -1,0 +1,17 @@
+version: '3.3'
+services:
+  ubuntu:
+    container_name: ubuntu-server
+    build:
+      context: .
+      dockerfile: ./dockerfiles/ubuntu-server.dockerfile
+    ports:
+      - "2220:22"
+
+  centos:
+    container_name: centos-server
+    build:
+      context: .
+      dockerfile: ./dockerfiles/centos-server.dockerfile
+    ports:
+      - "2221:22"
