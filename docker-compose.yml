@@ -10,14 +10,3 @@ services:
         SSH_MASTER_PASS: ${SSH_MASTER_PASS}
     ports:
       - "2220:22"
-
-  centos:
-    container_name: centos-server
-    build:
-      context: .
-      dockerfile: ./dockerfiles/centos-server.dockerfile
-      args:
-        SSH_MASTER_USER: ${SSH_MASTER_USER}
-        SSH_MASTER_PASS: ${SSH_MASTER_PASS}
-    ports:
-      - "2221:22"
