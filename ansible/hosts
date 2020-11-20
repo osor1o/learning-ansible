@@ -1,0 +1,5 @@
+[linux_server]
+localhost ansible_port=2220 ansible_user=main
+
+[debian]
+localhost ansible_port=2220 ansible_user=main
